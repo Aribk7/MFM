@@ -22,9 +22,9 @@ const Header = () => {
     <header className="sticky top-0 bg-white">
       <div className="flex w-full p-6 items-center">
         <Image
-          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-          height={40}
-          width={120}
+          src="/../public/SearchMFM.png"
+          height={25}
+          width={125}
           onClick={() => router.push("/")}
           className="cursor-pointer"
         />
@@ -38,20 +38,20 @@ const Header = () => {
             className="h-7 sm:mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125"
             onClick={() => (searchInputRef.current.value = "")}
           />
-          <MicrophoneIcon className="mr-3 h-6 hidden sm:inline-flex text-blue-500 border-l-2 pl-4 border-gray-300" />
+          {/* <MicrophoneIcon className="mr-3 h-6 hidden sm:inline-flex text-blue-500 border-l-2 pl-4 border-gray-300" /> */}
           <SearchIcon className="h-6 text-blue-500 hidden sm:inline-flex" />
           <button hidden type="submit" onClick={search}>
             Search
           </button>
         </form>
-        <Avatar
+        {/* <Avatar
           className="ml-auto"
           url="https://images.pexels.com/photos/2437286/pexels-photo-2437286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-        />
+        /> */}
       </div>
 
       {/* Header Options */}
-      <HeaderOptions />
+      {/* <HeaderOptions /> */}
     </header>
   );
 };
